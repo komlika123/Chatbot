@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CDP Support Chatbot</title>
+    
+    
+</head>
+<body>
+    <div class="header">
+        <h1>CDP Support Chatbot</h1>
+    </div>
+    
+    <div class="platform-selector">
+        <button class="platform-btn active" data-platform="all">All CDPs</button>
+        <button class="platform-btn" data-platform="segment">Segment</button>
+        <button class="platform-btn" data-platform="mparticle">mParticle</button>
+        <button class="platform-btn" data-platform="lytics">Lytics</button>
+        <button class="platform-btn" data-platform="zeotap">Zeotap</button>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                Hello! I'm your CDP Support Assistant. How can I help you today?
+            </div>
+        </div>
+        
+        <div class="typing-indicator" id="typing-indicator">Bot is typing...</div>
+        
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your question here...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
