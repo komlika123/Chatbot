@@ -1,160 +1,65 @@
-Spreadsheet Clone
 
-This project is a basic implementation of a web-based spreadsheet application. It features a customizable grid with basic formatting, formula handling, and row/column operations.
+# CDP Support Chatbot
 
-Features
+## Overview
 
-Interactive Grid:
+The **CDP Support Chatbot** is a web-based tool designed to assist users in navigating and troubleshooting various Customer Data Platforms (CDPs) such as Segment, mParticle, Lytics, and Zeotap. It provides an intuitive interface for asking questions and receiving guided support.
 
-A resizable grid with 50 rows and 26 columns by default.
+## Features
 
-Cells are editable, allowing text input directly.
+- **Platform Selection:** Choose a specific CDP to get tailored responses.
+- **Dynamic Chat Interface:** Real-time interaction with a chatbot that processes user input and provides relevant answers.
+- **How-to Guidance:** Step-by-step instructions for common CDP-related tasks.
+- **Comparison Functionality:** Highlights differences and similarities between CDPs.
 
-Toolbar Functionalities:
+## File Structure
 
-Bold and italic formatting.
+### 1. `index.html`
+- Defines the structure of the application.
+- Contains elements for the header, platform selector, chat interface, and input container.
 
-Adjustable font sizes (12px, 14px, 16px).
+### 2. `script.js`
+- Handles chatbot logic and user interactions.
+- Key functionalities:
+  - Platform selection handling.
+  - User input processing.
+  - Dynamic message addition to the chatbox.
+  - Response generation for how-to guides and platform comparisons.
 
-Functions for inserting/deleting rows and columns.
+### 3. `style.css`
+- Provides the visual styling for the application.
+- Key styles:
+  - Layout and colors for the header, platform selector, and chat interface.
+  - Differentiated message bubbles for users and the bot.
+  - Responsive and user-friendly design.
 
-Predefined functions such as SUM, AVERAGE, MAX, MIN, COUNT, TRIM, UPPER, and LOWER.
+## How to Use
 
-Formula Bar:
+1. **Open the Application:**
+   - Open the `index.html` file in a web browser.
 
-Displays the content or formula of the selected cell.
+2. **Select a Platform:**
+   - Use the buttons at the top to filter responses for a specific CDP or choose "All CDPs."
 
-Allows users to input or edit formulas directly.
+3. **Ask Questions:**
+   - Type your query into the input field and press "Send" or hit "Enter."
+   - Examples:
+     - "How to set up a new source?"
+     - "What’s the difference between Segment and Lytics?"
 
-Column Resizing:
+4. **View Responses:**
+   - The chatbot will display the relevant answers in the chatbox.
 
-Resize columns using a draggable handle on the cell edge.
+## Technical Details
 
-Dynamic Header and Row Numbering:
+- **Frontend:** HTML, CSS, JavaScript
+- **Chatbot Logic:**
+  - Simulates API responses with keyword-based logic.
+  - Includes functionality for generating detailed steps and comparisons.
 
-Alphabetic column headers (A-Z).
+## Future Enhancements
 
-Numeric row headers starting from 1.
-
-Technologies Used
-
-HTML5: For the structure of the application.
-
-CSS3: For styling the grid, toolbar, and other components.
-
-JavaScript: For grid interactivity, formula evaluation, and DOM manipulation.
-
-Installation and Setup
-
-Clone the repository:
-
-git clone https://github.com/your-username/spreadsheet-clone.git
-
-Navigate to the project directory:
-
-cd spreadsheet-clone
-
-Open index.html in your web browser:
-
-open index.html
-
-How to Use
-
-Editing Cells:
-
-Click on any cell to select it.
-
-Start typing to input text.
-
-Press Enter to save the input.
-
-Formatting:
-
-Use the toolbar buttons to apply bold or italic styles.
-
-Change font size using the dropdown menu.
-
-Row and Column Operations:
-
-Insert or delete rows and columns using the respective toolbar buttons.
-
-Formulas:
-
-Select a cell, type a formula starting with = in the formula bar, and press Enter.
-
-Example: =SUM(10,20) will compute the sum of 10 and 20.
-
-Functions:
-
-Select a function from the dropdown (e.g., SUM, AVERAGE) to apply it to the selected cell.
-
-Resizing Columns:
-
-Hover over the right edge of a column to see the resize handle.
-
-Drag the handle to adjust the column width.
-
-Formula Syntax
-
-Formulas must start with =.
-
-Supported functions include:
-
-SUM(range): Calculates the sum of values.
-
-AVERAGE(range): Calculates the average of values.
-
-MAX(range): Finds the maximum value.
-
-MIN(range): Finds the minimum value.
-
-COUNT(range): Counts numeric values.
-
-TRIM(range): Trims whitespace from strings.
-
-UPPER(range): Converts text to uppercase.
-
-LOWER(range): Converts text to lowercase.
-
-Limitations
-
-Basic formula parsing is implemented; advanced cell reference handling is not yet supported.
-
-Real-time cell dependency tracking is not implemented.
-
-No data persistence (changes are lost on page reload).
-
-Future Enhancements
-
-Cell References:
-
-Allow referencing other cells in formulas (e.g., =SUM(A1:A5)).
-
-Data Persistence:
-
-Save and load grid data using local storage or a backend service.
-
-Advanced Functions:
-
-Add more complex spreadsheet functions and support for nested formulas.
-
-Improved UI/UX:
-
-Add drag-and-drop functionality for reordering rows and columns.
-
-Mobile Responsiveness:
-
-Enhance the design for better usability on mobile devices.
-
-License
-
-This project is open-source and available under the MIT License.
-
-Contribution
-
-Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request with your changes.
-
-Contact
-
-For any questions or suggestions, please reach out to [tarukomlika01@gmail.com].
+- Add API integration for dynamic and more personalized responses.
+- Expand support to additional CDPs.
+- Implement user authentication and persistent chat history.
 
